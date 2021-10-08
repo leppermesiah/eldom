@@ -1,0 +1,10 @@
+{
+  "_template": "gh:oncleben31/cookiecutter-homeassistant-custom-component",
+  "class_name_prefix": "EldomHeater",
+  "domain_name": "eldom_heater",
+  "friendly_name": "eldom_heater",
+  "github_user": "pve84",
+  "project_name": "eldom-heater",
+  "test_suite": "yes",
+  "version": "0.0.0"
+}

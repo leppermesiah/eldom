@@ -1,0 +1,13 @@
+{
+  "domain": "eldom",
+  "name": "Eldom",
+  "documentation": "https://github.com/pve84/eldom",
+  "issue_tracker": "https://github.com/pve84/eldom/issues",
+  "dependencies": [],
+  "config_flow": true,
+  "codeowners": [
+    "@pve84"
+  ],
+  "requirements": [],
+  "version": "0.0.1"
+}
