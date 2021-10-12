@@ -23,10 +23,9 @@ ICON = "mdi:radiator"
 ICON_SETPOINT = "hass:thermometer"
 
 # Platforms
+CLIMATE = "climate"
 SENSOR = "sensor"
-SWITCH = "switch"
-NUMBER = "number"
-PLATFORMS = [SENSOR, SWITCH, NUMBER]
+PLATFORMS = [CLIMATE, SENSOR]
 
 
 # Configuration and options

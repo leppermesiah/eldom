@@ -37,8 +37,10 @@ class EldomTemperatureSensor(EldomEntity):
 
     @property
     def state_class(self):
+        """Return state"""
         return "measurement"
 
     @property
     def extra_state_attributes(self):
+        """Return extra attributes"""
         return self.coordinator.data
