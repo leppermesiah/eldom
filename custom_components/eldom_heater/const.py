@@ -1,14 +1,9 @@
 """Constants for eldom_heater."""
 # Base component constants
-from homeassistant.components.climate import DEFAULT_MAX_TEMP, DEFAULT_MIN_TEMP
-from homeassistant.const import (
-    CONF_USERNAME,
-    CONF_PASSWORD,
-    CONF_ACCESS_TOKEN,
-    CONF_UNIQUE_ID,
-    CONF_DEVICE_ID,
-    CONF_FRIENDLY_NAME,
-)
+from homeassistant.components.climate import DEFAULT_MAX_TEMP
+from homeassistant.components.climate import DEFAULT_MIN_TEMP
+from homeassistant.const import CONF_PASSWORD
+from homeassistant.const import CONF_USERNAME
 
 
 NAME = "eldom"
@@ -29,8 +24,6 @@ PLATFORMS = [CLIMATE, SENSOR]
 
 
 # Configuration and options
-CONF_USERNAME = "username"
-CONF_PASSWORD = "password"
 CONF_ACCESS_TOKEN = "token"
 CONF_UNIQUE_ID = "uuid"
 CONF_FRIENDLY_NAME = "name"

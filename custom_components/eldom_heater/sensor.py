@@ -1,6 +1,7 @@
 """Sensor platform for eldom_heater."""
-from .const import DEFAULT_NAME, ICON_SETPOINT
+from .const import DEFAULT_NAME
 from .const import DOMAIN
+from .const import ICON_SETPOINT
 from .entity import EldomEntity
 
 

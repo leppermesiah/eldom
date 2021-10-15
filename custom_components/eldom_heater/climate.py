@@ -5,17 +5,18 @@ import logging
 from typing import Any
 
 from homeassistant.components.climate import ClimateEntity
-from homeassistant.components.climate.const import (
-    HVAC_MODE_HEAT,
-    HVAC_MODE_OFF,
-    SUPPORT_TARGET_TEMPERATURE,
-)
-from homeassistant.const import (
-    ATTR_TEMPERATURE,
-    PRECISION_WHOLE,
-    TEMP_CELSIUS,
-)
-from .const import DOMAIN, DEFAULT_NAME, DEFAULT_MIN_TEMP, DEFAULT_MAX_TEMP, CLIMATE
+from homeassistant.components.climate.const import HVAC_MODE_HEAT
+from homeassistant.components.climate.const import HVAC_MODE_OFF
+from homeassistant.components.climate.const import SUPPORT_TARGET_TEMPERATURE
+from homeassistant.const import ATTR_TEMPERATURE
+from homeassistant.const import PRECISION_WHOLE
+from homeassistant.const import TEMP_CELSIUS
+
+from .const import CLIMATE
+from .const import DEFAULT_MAX_TEMP
+from .const import DEFAULT_MIN_TEMP
+from .const import DEFAULT_NAME
+from .const import DOMAIN
 from .entity import EldomEntity
 
 _LOGGER = logging.getLogger(__name__)
@@ -98,10 +99,3 @@ class EldomClimate(EldomEntity, ClimateEntity):
         data["Req"] = "SetParams"
         await self.coordinator.api.async_set_parameter(data)
         await self.coordinator.async_request_refresh()
-
-    # async def async_update(self) -> None:
-    #     """Get the latest data."""
-    #     for room in await self._adax_data_handler.get_rooms():
-    #         if room["id"] == self._heater_data["id"]:
-    #             self._heater_data = room
-    #             return
