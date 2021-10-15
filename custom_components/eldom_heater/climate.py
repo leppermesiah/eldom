@@ -8,13 +8,13 @@ from homeassistant.components.climate import ClimateEntity
 from homeassistant.components.climate.const import HVAC_MODE_HEAT
 from homeassistant.components.climate.const import HVAC_MODE_OFF
 from homeassistant.components.climate.const import SUPPORT_TARGET_TEMPERATURE
+from homeassistant.components.climate import DEFAULT_MAX_TEMP
+from homeassistant.components.climate import DEFAULT_MIN_TEMP
 from homeassistant.const import ATTR_TEMPERATURE
 from homeassistant.const import PRECISION_WHOLE
 from homeassistant.const import TEMP_CELSIUS
 
 from .const import CLIMATE
-from .const import DEFAULT_MAX_TEMP
-from .const import DEFAULT_MIN_TEMP
 from .const import DEFAULT_NAME
 from .const import DOMAIN
 from .entity import EldomEntity
