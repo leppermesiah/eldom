@@ -19,9 +19,7 @@ from homeassistant.helpers.update_coordinator import UpdateFailed
 from .api import EldomApiClient
 from .const import CONF_ACCESS_TOKEN
 from .const import CONF_DEVICE_ID
-from .const import CONF_PASSWORD
 from .const import CONF_UNIQUE_ID
-from .const import CONF_USERNAME
 from .const import DOMAIN
 from .const import PLATFORMS
 from .const import STARTUP_MESSAGE
