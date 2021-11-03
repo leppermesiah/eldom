@@ -42,6 +42,10 @@ class EldomTemperatureSensor(EldomEntity):
         return "measurement"
 
     @property
+    def native_unit_of_measurement(self):
+        return "°C"
+
+    @property
     def extra_state_attributes(self):
         """Return extra attributes"""
         return self.coordinator.data
